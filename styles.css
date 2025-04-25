@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-page {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 90vh;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .login-left {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #eee;
+  }
+  
+  .login-box {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .logo {
+    max-width: 160px;
+    margin-bottom: 40px;
+  }
+  
+  .login-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .sign-in {
+    width: 100%;
+    padding: 10px;
+    background-color: #5b0ee8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .sign-in:hover {
+    background-color: #4a0cbf;
+  }
+  
+  .forgot,
+  .demo-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #5b0ee8;
+    text-align: center;
+  }
+  
+  .demo-link a {
+    text-decoration: none;
+    color: #5b0ee8;
+  }
+  
+  .login-right {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .hero-graphic {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .hero-graphic img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .hero-graphic h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-graphic p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .view-sessions {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .view-sessions:hover {
+    background-color: #eee;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .login-page {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .login-left,
+    .login-right {
+      flex: none;
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .login-right {
+      padding-top: 0;
+    }
+  }
+  
